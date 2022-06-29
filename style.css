@@ -26,6 +26,8 @@ html, body {
 .header {
     grid-row: 1 / 2;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
 }
 
 .main-content {
@@ -36,4 +38,33 @@ html, body {
     display: grid;
     gap: 8px;
     font-size: large;
+}
+
+.search {
+    grid-template-columns: 3fr 1fr;
+    align-self: center;
+    grid-auto-flow: column;
+    display: grid;
+    grid-row: 1 / 2;
+}
+
+.search-1, .search-2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 20px;
+}
+
+.user-panel {
+    display: grid;
+    align-self: center;
+    grid-auto-flow: column;
+}
+
+.user-1, .user-2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 20px;
+    align-items: center;
 }
