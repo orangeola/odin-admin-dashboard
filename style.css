@@ -10,6 +10,11 @@ a {
     color: inherit;
   }
 
+input {
+    border: none;
+    border-radius: 10px;
+  }
+
 html, body {
     height: 100%;
 }
@@ -34,6 +39,8 @@ html, body {
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
+    padding-left: 40px;
+    padding-right: 100px;
 }
 
 .main-content {
@@ -64,33 +71,81 @@ div > img {
     justify-self: flex-end;
 }
 
+.small-dp {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.big-dp {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+
 .search {
     grid-template-columns: 3fr 1fr;
     align-self: center;
     grid-auto-flow: column;
     display: grid;
     grid-row: 1 / 2;
+    gap: 20px;
 }
 
-.search-1, .search-2 {
+.search-1 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content auto;
+    gap: 20px;
+    align-self: center;
+}
+
+.search-2 {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 20px;
+    align-items: center;
+    justify-self: flex-end;
 }
 
 .user-panel {
     display: grid;
     align-self: center;
     grid-auto-flow: column;
+    gap: 30px;
 }
 
-.user-1, .user-2 {
+.user-1 {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 20px;
     align-items: center;
+}
+
+.user-2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 30px;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.user-2 > button {
+    border-radius: 30px;
+    padding: 10px;
+    width: 90px;
+    background-color: #2271f0;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.user-greeting {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-content {
