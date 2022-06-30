@@ -76,13 +76,19 @@ html, body {
     padding-top: 20px;
 }
 
-div > img {
+.nav-1 > img, .nav-2 > img, .logo > img {
     justify-self: flex-end;
 }
 
 .small-dp {
     height: 40px;
     width: 40px;
+    border-radius: 50px;
+}
+
+.med-dp {
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
 }
 
@@ -270,7 +276,12 @@ div > img {
 }
 
 .tr-card {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 3fr;
+    gap: 15px;
+    align-items: center;
     background-color: #444;
     color: black;
     background-color: white;
@@ -278,4 +289,9 @@ div > img {
     box-shadow: 1px 5px 5px #b5b5b5;
     position: relative;
     align-self: stretch;
+    font-size: 15px;
+}
+
+.tr-card img {
+    justify-self: flex-end;
 }
