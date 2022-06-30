@@ -50,9 +50,11 @@ html, body {
 .main-content {
     background-color: #d9d9d9;
     display: grid;
-    grid-template: 45px 5fr 45px 4fr / 3.5fr 1fr;
+    grid-template: 45px 4.5fr 45px 4.5fr / 3.5fr 1fr;
     padding-left: 15px;
-    column-gap: 15px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    column-gap: 25px;
 }
 
 .nav-1, .nav-2 {
@@ -161,6 +163,7 @@ div > img {
 
 .project-title {
     grid-area: 1 / 1 / 2 / 2;
+    padding-bottom: 4px;
 }
 
 .project-cards {
@@ -174,19 +177,22 @@ div > img {
 
 .announce-title {
     grid-area: 1 / 2 / 2 / 3;
-    
+    padding-bottom: 4px;
 }
 
 .announce-cards {
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
 }
 
 .trending-title {
     grid-area: 3 / 2 / 4 / 3;
+    padding-bottom: 4px;
 }
 
 .trending-cards {
     grid-area: 4 / 2 / 5 / 3;
+    display: grid;
 }
 
 .project-title, .announce-title, .trending-title {
@@ -210,7 +216,7 @@ div > img {
     padding-right: 20px;
 }
 
-.card-text > p {
+.card-text > p, .an-block > p {
     color: #4f4f4f;
     font-size: 15px;
 }
@@ -234,7 +240,42 @@ div > img {
     background-color: white;
     border-radius: 10px;
     height: 250px;
-
     box-shadow: 1px 5px 5px #b5b5b5;
     position: relative;
+}
+
+.an-card {
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    background-color: #444;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px #b5b5b5;
+    position: relative;
+    
+    font-size: 14px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.grey-line {
+    background-color: grey;
+}
+
+.an-block {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   align-self: center;
+}
+
+.tr-card {
+    display: grid;
+    background-color: #444;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px #b5b5b5;
+    position: relative;
+    align-self: stretch;
 }
