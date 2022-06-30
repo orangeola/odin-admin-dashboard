@@ -2,6 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
   }
 
 html, body {
@@ -11,7 +17,7 @@ html, body {
 .container {
     display: grid;
     min-height: 100%;
-    grid-template: 1fr 4fr / 1fr 5fr;
+    grid-template: 1fr 4fr / 1fr 6fr;
 }
 
 .sidebar {
@@ -19,7 +25,7 @@ html, body {
     background-color: #2271f0;
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    gap: 30px;
+    gap: 50px;
     color: white;
 }
 
@@ -34,14 +40,28 @@ html, body {
     background-color: #cccccc;
     display: grid;
     grid-template: 1fr 5fr 1fr 4fr / 3.5fr 1fr;
-
-    /*grid-template: 1fr 10fr / 3.5fr 1fr;*/
 }
 
-.nav-1, .nav-2, .logo {
+.nav-1, .nav-2 {
     display: grid;
-    gap: 8px;
+    grid-template-columns: 1.5fr 5fr;
+    gap: 17px;
     font-size: large;
+    font-weight: bold;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1.7fr 5fr;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 20px;
+}
+
+div > img {
+    justify-self: flex-end;
 }
 
 .search {
